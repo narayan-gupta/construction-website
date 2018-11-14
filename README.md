@@ -26,3 +26,14 @@ $ source venv/bin/activate
 $ cd construction
 $ python manage.py runserver
 ~~~
+
+Now visit `localhost:8000`. Your django site is live! 🚀
+
+**3) Admin Site**
+
+~~~bash
+$ cd construction-website/construction
+$ python manage.py createsuperuser
+~~~
+
+Now visit `localhost:8000/admin` to visit the admin view of the website & login with your super user credentials. 
