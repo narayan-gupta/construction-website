@@ -10,10 +10,12 @@ The following instructions will allow you to get a version of this app up and ru
 ~~~bash
 $ cd ~/construction-website
 $ virtualenv venv
-$ source venv/bin/activate
+$ source venv/bin/activateA
+$ cd construction
 $ pip install -r requirements.txt
 $ createuser -d BobTheBuilder
 $ createdb -U BobTheBuilder constructiondb
+$ python manage.py migrate
 ~~~
 
 **2) Run a local server**
@@ -21,5 +23,6 @@ $ createdb -U BobTheBuilder constructiondb
 ~~~bash
 $ cd ~/construction-website
 $ source venv/bin/activate
+$ cd construction
 $ python manage.py runserver
 ~~~
