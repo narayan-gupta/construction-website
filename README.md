@@ -12,7 +12,8 @@ $ cd ~/construction-website
 $ virtualenv venv
 $ source venv/bin/activate
 $ pip install -r requirements.txt
-$ createdb constructiondb
+$ createuser -d BobTheBuilder
+$ createdb -U BobTheBuilder constructiondb
 ~~~
 
 **2) Run a local server**
