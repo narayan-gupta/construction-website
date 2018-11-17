@@ -5,5 +5,9 @@
 }
 
 .contactForm{
-    padding: 5vw
+    padding: 1vw;
+}
+
+#submitButton {
+    margin: 0 auto;
 }
