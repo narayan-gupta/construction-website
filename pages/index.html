@@ -34,31 +34,49 @@
     <!-- END TITLE -->
 </head>
 
-<body class="body-home">
+<body class="body-container">
     <!-- CONTENT -->
 
     <!-- NAVBAR -->
     <div id="main-navbar">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
             <a class="navbar-brand"
                href="#">
                 Union General
             </a>
-            <button class="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end"
+            <div class="navbar-buttons">
+                <button class="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse navbar-collapse-dark justify-content-end"
                  id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link"
-                           href="#">Link</a>
+                           href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="#">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="#">Plans</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="#">Contact</a>
+                    </li>
+                    <li class="nav-item nav-item-prime">
+                        <a class="nav-link"
+                           href="#">Get a Quote</a>
                     </li>
                 </ul>
             </div>
@@ -66,11 +84,23 @@
     </div>
     <!-- END NAVBAR -->
 
-
-
-
-
-
+    <!-- HERO -->
+    <div class="hero-container">
+        <div id="home-carousel"
+             class="carousel slide"
+             data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active lazy background"
+                     data-src="https://images.unsplash.com/photo-1519125478587-9e2e97231d2c?ixlib&#x3D;rb-0.3.5&amp;q&#x3D;80&amp;fm&#x3D;jpg&amp;crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;w&#x3D;1080&amp;fit&#x3D;max&amp;ixid&#x3D;eyJhcHBfaWQiOjExNzczfQ&amp;s&#x3D;f555c229fd7926ccd7b3c41a288a2f54">
+                </div>
+                <div class="carousel-item">
+                </div>
+                <div class="carousel-item">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END HERO -->
 
     <!-- END CONTENT -->
 
@@ -84,6 +114,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/10.19.0/lazyload.min.js"></script>
     <script src="./assets/index.js"
             type="application/javascript"></script>
     <!-- END SCRIPTS -->

@@ -1,0 +1,74 @@
+/* General Styles */
+
+.body-container {
+    background-color: #363237;
+}
+
+/* removes button outline on click */
+
+button:focus {
+    outline: 0 !important
+}
+
+/* End General Styles */
+
+/* Navbar Styles */
+
+#main-navbar {
+    font-family: Oswald;
+    text-transform: uppercase;
+}
+
+#main-navbar .navbar-brand {
+    border-color: transparent;
+    padding: 0.25rem 0.25rem;
+    font-size: 1.5rem;
+}
+
+#main-navbar .navbar-toggler {
+    border-color: transparent;
+    padding: 0.25rem 0.25rem;
+}
+
+#main-navbar .nav-item {
+    margin: 0rem 0.5rem;
+    padding: 0.25rem 1rem;
+}
+
+#main-navbar .nav-item.nav-item-prime {
+    background-color: rgba(240, 80, 30, 0.8);
+}
+
+#main-navbar .nav-link {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.2rem;
+}
+
+/* Mobile View */
+
+@media only screen and (max-width:992px) {
+    #main-navbar .navbar-collapse-dark {
+        margin-top: 0.5rem;
+    }
+    #main-navbar .nav-item {
+        color: #fff;
+        padding: 1rem 1.5rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
+
+/* End Navbar Styles */
+
+/* Hero Styles */
+
+.hero-container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.home-carousel, #home-carousel .carousel-inner {
+    height: 100vh;
+}
+
+/* End Hero Styles */
