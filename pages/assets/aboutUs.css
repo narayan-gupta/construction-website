@@ -1,0 +1,9 @@
+.jumbotron {
+    background-image: url("../assets/contactUsTopper.jpg");
+    background-size: cover;
+    min-height: 35em
+}
+
+.contactForm{
+    padding: 5vw
+}
