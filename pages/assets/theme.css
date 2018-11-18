@@ -4,6 +4,29 @@
     background-color: #363237;
 }
 
+/* lazy background images cover */
+div.lazy {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Oswald, sans-serif;
+    color: #fff;
+}
+
+p {
+    font-family: Raleway, sans-serif;
+    color: #fff;
+}
+
+/* gradients */
+.gradient {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.8) 70%, rgba(0, 0, 0, 1) 100%);
+}
+
 /* removes button outline on click */
 
 button:focus {
@@ -15,12 +38,14 @@ button:focus {
 /* Navbar Styles */
 
 #main-navbar {
-    font-family: Oswald;
+    font-family: Oswald, sans-serif;
     text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 #main-navbar .navbar-brand {
     border-color: transparent;
+    color: rgba(255, 255, 255, 0.99);
     padding: 0.25rem 0.25rem;
     font-size: 1.5rem;
 }
@@ -28,20 +53,22 @@ button:focus {
 #main-navbar .navbar-toggler {
     border-color: transparent;
     padding: 0.25rem 0.25rem;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 #main-navbar .nav-item {
     margin: 0rem 0.5rem;
     padding: 0.25rem 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 #main-navbar .nav-item.nav-item-prime {
-    background-color: rgba(240, 80, 30, 0.8);
+    background-color: rgba(240, 80, 30, 0.9);
 }
 
 #main-navbar .nav-link {
-    color: rgba(255, 255, 255, 0.9);
     font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 /* Mobile View */
@@ -53,7 +80,7 @@ button:focus {
     #main-navbar .nav-item {
         color: #fff;
         padding: 1rem 1.5rem;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.7);
         border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
 }
@@ -63,12 +90,23 @@ button:focus {
 /* Hero Styles */
 
 .hero-container {
+    font-family: Oswald, sans-serif;
+    color: #fff;
     width: 100vw;
+    height: 100vh;
+    bottom: 0;
+    position: absolute;
+}
+
+#home-carousel, #home-carousel .carousel-inner, #home-carousel .carousel-item {
     height: 100vh;
 }
 
-.home-carousel, #home-carousel .carousel-inner {
-    height: 100vh;
+#home-carousel .carousel-control-prev, #home-carousel .carousel-control-next {
+    top: auto;
+    bottom: 3rem;
 }
+
+
 
 /* End Hero Styles */

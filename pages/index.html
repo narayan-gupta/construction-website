@@ -39,10 +39,10 @@
 
     <!-- NAVBAR -->
     <div id="main-navbar">
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+        <nav class="navbar fixed-top navbar-expand-lg">
             <a class="navbar-brand"
                href="#">
-                Union General
+                Union General Contracting
             </a>
             <div class="navbar-buttons">
                 <button class="navbar-toggler"
@@ -89,35 +89,90 @@
         <div id="home-carousel"
              class="carousel slide"
              data-ride="carousel">
+             <!-- Carousel Indicatiors -->
+            <ol class="carousel-indicators">
+                    <li data-target="#home-carousel"
+                        data-slide-to="0"
+                        class="active"></li>
+                    <li data-target="#home-carousel"
+                        data-slide-to="1"></li>
+                    <li data-target="#home-carousel"
+                        data-slide-to="2"></li>
+                </ol>
+                <!-- End Carousel Indicators -->
+            <!-- Carousel Inner -->
             <div class="carousel-inner">
-                <div class="carousel-item active lazy background"
-                     data-src="https://images.unsplash.com/photo-1519125478587-9e2e97231d2c?ixlib&#x3D;rb-0.3.5&amp;q&#x3D;80&amp;fm&#x3D;jpg&amp;crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;w&#x3D;1080&amp;fit&#x3D;max&amp;ixid&#x3D;eyJhcHBfaWQiOjExNzczfQ&amp;s&#x3D;f555c229fd7926ccd7b3c41a288a2f54">
+                <div class="carousel-item active lazy"
+                     data-bg="url()">
+                    <div class="gradient d-flex align-items-center">
+                        <div class="container d-flex align-items-center px-6">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h1>Union General Contracting</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item lazy"
+                     data-bg="url()">
+                    <div class="gradient d-flex align-items-center">
+                        <div class="container d-flex align-items-center">
+                            <div class="row">
+                                2
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item lazy"
+                     data-bg="url()">
+                    <div class="gradient d-flex align-items-center">
+                        <div class="container d-flex align-items-center">
+                            <div class="row">
+                                3
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <!-- End Carousel Inner -->
+             <!-- Carousel Controls -->
+             <a class="carousel-control-prev d-md-none"
+             href="#home-carousel"
+             role="button"
+             data-slide="prev">
+              <span class="carousel-control-prev-icon"
+                    aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next d-md-none"
+             href="#home-carousel"
+             role="button"
+             data-slide="next">
+              <span class="carousel-control-next-icon"
+                    aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+          </a>
+          <!-- End Carousel Controls-->
         </div>
-    </div>
-    <!-- END HERO -->
+        <!-- END HERO -->
 
-    <!-- END CONTENT -->
+        <!-- END CONTENT -->
 
-    <!-- SCRIPTS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/10.19.0/lazyload.min.js"></script>
-    <script src="./assets/index.js"
-            type="application/javascript"></script>
-    <!-- END SCRIPTS -->
+        <!-- SCRIPTS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@10.19.0/dist/lazyload.min.js"></script>
+        <script src="./assets/index.js"
+                type="application/javascript"></script>
+        <!-- END SCRIPTS -->
 </body>
 
 </html>
