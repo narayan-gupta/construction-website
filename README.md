@@ -41,9 +41,35 @@ Now visit `localhost:8000/admin` to visit the admin view of the website & login 
 
 ## Zappa
 
+### Building Docker Image
+As a prerequisite, have Docker installed on your local machine. Run the following comamnds in the directory with the `Dockerfile`
+
+```bash
+$ docker pull lambci/lambda:build-python3.6
+$ docker build -t myzappa .
+```
+
+### Deployment
+
+```bash
+$ zappa deploy dev
+```
+* This command sets up the API Gateways on AWS + creates Lambda handlers + uploads your package to S3
+
+```bash
+$ zappa update dev
+```
+* This command simply updates the content in S3 with your updated package
+
+```bash
+$ zappa manage dev "collectstatic --noinput"
+```
+* This command should be run from your zappa powered env. It will upload all static assets to S3. 
+
 ### Configuring S3 bucket for static assets
 
 ```bash
 $ aws s3 mb s3://zappa-static-construction  --endpoint-url https://s3.us-east-1.amazonaws.com
 $ aws s3api put-bucket-cors --bucket zappa-static-construction --cors-configuration file://.cors-policy.json
 ```
+
