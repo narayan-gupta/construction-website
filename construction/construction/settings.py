@@ -27,7 +27,6 @@ DEBUG = False
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -142,3 +141,14 @@ if not DEBUG:
     STATIC_ROOT = os.path.join(BASE_DIR, "static")
     ALLOWED_HOSTS = ['localhost', '127.0.0.1',
                      '.elasticbeanstalk.com', '.execute-api.us-east-1.amazonaws.com']
+
+    # Static S3 Setup
+    YOUR_S3_BUCKET = "zappa-static-construction"
+
+    STATICFILES_STORAGE = "django_s3_storage.storage.StaticS3Storage"
+    AWS_S3_BUCKET_NAME_STATIC = YOUR_S3_BUCKET
+
+    # These next two lines will serve the static files directly
+    # from the s3 bucket
+    AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % YOUR_S3_BUCKET
+    STATIC_URL = "https://%s/" % AWS_S3_CUSTOM_DOMAIN

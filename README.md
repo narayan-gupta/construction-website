@@ -37,3 +37,13 @@ $ python manage.py createsuperuser
 ~~~
 
 Now visit `localhost:8000/admin` to visit the admin view of the website & login with your super user credentials. 
+
+
+## Zappa
+
+### Configuring S3 bucket for static assets
+
+```bash
+$ aws s3 mb s3://zappa-static-construction  --endpoint-url https://s3.us-east-1.amazonaws.com
+$ aws s3api put-bucket-cors --bucket zappa-static-construction --cors-configuration file://.cors-policy.json
+```
