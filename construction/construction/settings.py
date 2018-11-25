@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'k752^use&5=5!94aq7v#&4)zb@ql#&t2k58c#kp91j94p0jusz'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -140,4 +140,5 @@ STATICFILES_DIRS = ('core/static',)
 
 if not DEBUG:
     STATIC_ROOT = os.path.join(BASE_DIR, "static")
-    ALLOWED_HOSTS = ['localhost', '127.0.0.1', '.elasticbeanstalk.com']
+    ALLOWED_HOSTS = ['localhost', '127.0.0.1',
+                     '.elasticbeanstalk.com', '.execute-api.us-east-1.amazonaws.com']

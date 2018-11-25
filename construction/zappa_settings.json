@@ -1,0 +1,10 @@
+{
+    "dev": {
+        "aws_region": "us-east-1",
+        "django_settings": "construction.settings",
+        "profile_name": "shivam_dev",
+        "project_name": "construction",
+        "runtime": "python3.6",
+        "s3_bucket": "zappa-6rc2jghn3"
+    }
+}
